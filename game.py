@@ -9,10 +9,12 @@ def startGame():
 def printInstructions():
         numPad = list(range(1,10))
         gameBoard = [str(item) for item in numPad]
-        print("Instructions:\n")
-        print("This is a simple game of Tic, Tac, Toe following the standard rules")
-        print("To make a move at your turn, enter the number that corresponds to the box you wish to fill")
-        print("(The box numbering is laid out according the the numberpad on a standard computer keyboard)\n")
+        print("\n\n\n\n")
+        print("==========================================================================================")
+        print("\nInstructions:\n")
+        print("This is a simple game of Tic, Tac, Toe following the standard rules\n")
+        print("To make a move at your turn, enter the number that corresponds to the box you wish to fill\n")
+        print("The box numbering is laid out according the the numberpad on a standard computer keyboard\n\n\n")
         printBoard(gameBoard)
         print("\n")
 
@@ -26,11 +28,11 @@ def printInstructions():
 
 def printBoard(gameBoard):
 
-        print(gameBoard[6] + " | " + gameBoard[7] + " | " + gameBoard[8])
-        print("--|---|--")
-        print(gameBoard[3] + " | " + gameBoard[4] + " | " + gameBoard[5])
-        print("--|---|--")
-        print(gameBoard[0] + " | " + gameBoard[1] + " | " + gameBoard[2])
+        print("  " + gameBoard[6] + " | " + gameBoard[7] + " | " + gameBoard[8])
+        print("  --|---|--")
+        print("  " + gameBoard[3] + " | " + gameBoard[4] + " | " + gameBoard[5])
+        print("  --|---|--")
+        print("  " + gameBoard[0] + " | " + gameBoard[1] + " | " + gameBoard[2])
 
 
 def chooseMarker():
@@ -38,6 +40,7 @@ def chooseMarker():
 
         while marker != "X" and marker != "O":
                 print("\n")
+                print("==========================================================================================\n")
                 marker = input("Player 1 choose X or O: ").upper()
         
         player1 = marker
